@@ -24,7 +24,7 @@ int main(int argc, char **argv)
     // подготовить структуру с адресом "на той стороне" (сервера)
     sockaddr_in * remoteAddr = new (sockaddr_in);
     remoteAddr->sin_family = AF_INET; // интернет протокол IPv4
-    remoteAddr->sin_port = htons (7); // порт 44214
+    remoteAddr->sin_port = htons (7);
     remoteAddr->sin_addr.s_addr = inet_addr("82.179.90.12"); // локальный адрес 
     //remoteAddr->sin_addr.s_addr = htonl((127<<24) + 1); // локальный адреc
 
