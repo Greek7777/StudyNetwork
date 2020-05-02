@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     int msgLen = strlen(buf);        // вычисляем длину строки
 
     // создать сокет
-    int mySocket = socket(AF_INET, SOCK_DGRAM, 0); // TCP
+    int mySocket = socket(AF_INET, SOCK_DGRAM, 0); // UDP
     if (mySocket == -1) {
         errHandler("Error open socket", 11);
     }
